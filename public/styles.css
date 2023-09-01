@@ -1,0 +1,77 @@
+/* Reset some default styles */
+body, div, p, span, input, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Basic styling for the chat area */
+.chatbox {
+    margin-bottom: 5em;
+}
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+    overflow-wrap: break-word;
+}
+
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+
+.name {
+    font-weight: bolder;
+}
+
+/* Styling for the input box and send button */
+#message-box {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: 1.2em;
+    width: 100%;
+    display: flex;
+    background-color: white;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: royalblue;
+}
