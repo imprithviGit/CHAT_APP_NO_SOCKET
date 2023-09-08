@@ -34,8 +34,6 @@ app.post('/chat', (req, res) => {
     }
 });
 
-
-
 app.get('/', (req, res) => {
     res.render('index', { user: req.query.user });
 });
